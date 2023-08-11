@@ -13,11 +13,12 @@ import TopLeftImg from '../components/TopLeftImg'
 
 const Layout = ({children}) => {
   return (
-  <div>
-    <TopLeftImg/>
-    <Nav/>
-    <Header/>
-  </div>
+    <div className={'page bg-site text-white bg-cover bg-no-repeat'}>
+      <TopLeftImg/>
+      <Nav/>
+      <Header/>
+      {children}
+    </div>
   )
 };
 
