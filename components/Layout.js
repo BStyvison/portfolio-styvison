@@ -7,8 +7,20 @@ const sora = Sora({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
 })
 
-const Layout = () => {
-  return <div>Layout</div>;
+import Nav from '../components/Nav'
+import Header from '../components/Header'
+import TopLeftImg from '../components/TopLeftImg'
+
+export const Layout = ({children}) => {
+  return (
+    <div 
+      className={'page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative'}>
+      <TopLeftImg/>
+      <Nav/>
+      <Header/>
+      {children}
+    </div>
+  )
 };
 
-export default Layout;
+//export default Layout;
