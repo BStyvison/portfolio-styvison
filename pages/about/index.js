@@ -7,14 +7,14 @@ import {
   FaJs,
   FaReact,
   FaWordpress, FaFigma
-} from 'react-icons/fa'
+} from 'react-icons/fa';
 
 import {
   SiNextdotjs,
   SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
-} from "react-icons/si"
+} from "react-icons/si";
 
 //  data
 export const aboutData = [
