@@ -6,14 +6,15 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaWordpress, FaFigma
+  FaWordpress, 
+  FaSass
 } from 'react-icons/fa';
 
 import {
   SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
+  SiTypescript,
+  SiGit,
+  SiGithub
 } from "react-icons/si";
 
 //  data
@@ -24,18 +25,22 @@ export const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <SiNextdotjs key={5}/>,
+          <SiTypescript key={8}/>,
+          <FaReact key={4}/>,
+          <FaJs key={3}/>,
+          <FaSass key={9}/>,
+          <FaCss3 key={2}/>,
+          <FaHtml5 key={1}/>,
+          <FaWordpress key={7}/>,
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [
+          <SiGit key={4}/>,
+          <SiGithub key={5}/>
+      ],
       },
     ],
   },
@@ -98,6 +103,9 @@ import { motion } from "framer-motion";
 import { fadeIn } from '../../variants'
 import { icons } from "react-icons";
 
+//counter
+import CountUp from "react-countup";
+
 
 const About = () => {
 
@@ -115,7 +123,24 @@ const About = () => {
         <Avatar/>
       </motion.div>
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
-        <div className="flex-1 flex flex-col justify-center">text</div>
+        {/* text */}
+        <div className="flex-1 flex flex-col justify-center">
+          <h2 className="h2">Captivating <span className="text-accent">stories</span> birth magnificent designers.</h2>
+          <p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">10 years ago, I began freelancing as a developer. Since then, i ve done remote work for agencies, consulted for startups, and collaborated on digital products for business and consumer use.</p>
+          {/* counters */}
+          <div>
+            <div>
+              {/* experience */}
+              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-8 after:right-8">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2"> +
+                  <CountUp start={0} end={10} duration={5}/>
+                </div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Years of experience</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* info */}
         <div className=" flex flex-col w-full xl:max-w-[48%] h-[480px]">
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4" >
             {aboutData.map((item, itemIndex) => (
@@ -141,7 +166,7 @@ const About = () => {
                   {item.icons?.map((icon, itemIndex) => (
                     <div 
                       key={itemIndex} 
-                      className="text-2xl "
+                      className="text-2xl text-white"
                     >
                       {icon}
                     </div>
