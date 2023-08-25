@@ -96,6 +96,7 @@ import Circles from "../../components/Circles"
 //framer motion 
 import { motion } from "framer-motion";
 import { fadeIn } from '../../variants'
+import { icons } from "react-icons";
 
 
 const About = () => {
@@ -128,11 +129,24 @@ const About = () => {
               </div>
             ))}
           </div>
-          <div>
+          <div className=" py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => (
-              <div key={itemIndex}>
+              <div key={itemIndex} className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60">
                 {/* title */}
-                <div>{item.title}</div>
+                <div className="font-light mb-2 md:mb-0">{item.title}</div>
+                <div className="hidden md:flex">-</div>
+                <div>{item.stage}</div>
+                <div className="flex gap-x-4" >
+                  {/* icons */}
+                  {item.icons?.map((icon, itemIndex) => (
+                    <div 
+                      key={itemIndex} 
+                      className="text-2xl "
+                    >
+                      {icon}
+                    </div>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
