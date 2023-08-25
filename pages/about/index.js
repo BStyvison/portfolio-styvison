@@ -7,15 +7,12 @@ import {
   FaJs,
   FaReact,
   FaWordpress, 
-  FaFigma,
   FaSass
 } from 'react-icons/fa';
 
 import {
   SiNextdotjs,
-  SiAdobexd,
   SiTypescript,
-  SiAdobephotoshop, 
   SiGit,
   SiGithub
 } from "react-icons/si";
@@ -41,9 +38,6 @@ export const aboutData = [
       {
         title: 'UI/UX Design',
         icons: [
-          <FaFigma key={1}/>, 
-          <SiAdobexd key={2}/>, 
-          <SiAdobephotoshop key={3}/>,
           <SiGit key={4}/>,
           <SiGithub key={5}/>
       ],
@@ -131,17 +125,17 @@ const About = () => {
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
-          <h2>Captivating <span className="text-accent">stories</span> birth magnificent designers</h2>
-          <p className="max-w-[500px] mx-auto xl:mx-0 mb-12 px-2 xl:px-0">10 years ago, I began freelancing as a developer. Since then, i've done remote work for agencies, consulted for startups, and collaborated on digital products for business and consumer use.</p>
+          <h2 className="h2">Captivating <span className="text-accent">stories</span> birth magnificent designers.</h2>
+          <p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">10 years ago, I began freelancing as a developer. Since then, i ve done remote work for agencies, consulted for startups, and collaborated on digital products for business and consumer use.</p>
           {/* counters */}
           <div>
             <div>
               {/* experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-8 after:right-8">
-                <div className="text-2xl xl:text-4xl font-extralight text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5}/> +
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2"> +
+                  <CountUp start={0} end={10} duration={5}/>
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Years od experience</div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Years of experience</div>
               </div>
             </div>
           </div>
