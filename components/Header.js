@@ -23,7 +23,7 @@ const Header = () => {
             />
           </Link>
           {/* socials */}
-          {/* <Socials/> */}
+          <Socials />
         </div>
       </div>
     </header>
