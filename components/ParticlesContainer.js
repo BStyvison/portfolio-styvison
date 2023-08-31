@@ -8,7 +8,8 @@ const ParticlesContainer = () => {
     await loadFull(engine)
   }, [])
 
-  const particlesLoaded = useCallback(async () => { }, [])
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  const particlesLoaded = useCallback(async () => {}, [])
 
   return (
     <Particles
@@ -88,10 +89,9 @@ const ParticlesContainer = () => {
           },
         },
         detectRetina: true,
-      }}>
-
-    </Particles>
+      }}
+    />
   )
-};
+}
 
-export default ParticlesContainer;
+export default ParticlesContainer
