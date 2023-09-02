@@ -54,7 +54,21 @@ const Services = () => {
   return (
     <div className=" h-full bg-primary/38 py-36 flex items-center">
       <Circles />
-      <div className="container mx-auto"></div>
+      <div className="container mx-auto">
+        <div className="flex flex-col xl:flex-row gap-x-8">
+          {/* text */}
+          <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4">
+            <h2 className="h2 xl:mt-8">
+              My Services <span className="text-accent"></span>
+            </h2>
+            <p className="">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+          {/* slider */}
+          <ServiceSlider />
+        </div>
+      </div>
       <Bulb />
     </div>
   )
