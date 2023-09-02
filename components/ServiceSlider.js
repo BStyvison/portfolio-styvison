@@ -1,3 +1,12 @@
+// icons
+import {
+  RxCrop,
+  RxPencil2,
+  RxDesktop,
+  RxReader,
+  RxRocket,
+} from 'react-icons/rx'
+
 // data
 const serviceData = [
   {
@@ -25,10 +34,10 @@ const serviceData = [
     title: 'SEO',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
-];
+]
 
 const ServiceSlider = () => {
-  return <div>Service Slider</div>;
-};
+  return <div>Service Slider</div>
+}
 
-export default ServiceSlider;
+export default ServiceSlider
