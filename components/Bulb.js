@@ -1,5 +1,5 @@
 const Bulb = () => {
-  return <div>Bulb</div>;
-};
+  return <div>Bulb</div>
+}
 
-export default Bulb;
+export default Bulb
