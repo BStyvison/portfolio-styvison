@@ -35,7 +35,7 @@ export const aboutData = [
     title: 'skills',
     info: [
       {
-        title: 'Web Development',
+        title: 'Desenvolvimento Web',
         icons: [
           <SiNextdotjs key={5} />,
           <SiTypescript key={8} />,
@@ -48,55 +48,59 @@ export const aboutData = [
         ],
       },
       {
-        title: 'UI/UX Design',
+        title: 'Outras tecnologias',
         icons: [<SiGit key={4} />, <SiGithub key={5} />, <SiGulp key={6} />],
       },
     ],
   },
   {
-    title: 'awards',
+    title: 'Formação',
     info: [
       {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
-      },
-      {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
+        title: 'ADS - Universidade Católica de Brasília',
+        stage: 'Cursando',
       },
     ],
   },
   {
-    title: 'experience',
+    title: 'experiencias',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Progamador Web - XP Mídia',
+        stage: 'Abril de 2022 - Atualmente',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
+        title: 'Programador web - Autonomo',
+        stage: 'Março de 2023 - Atualmente',
       },
       {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'Progamador Web - Agencia 87',
+        stage: 'junho de 2023 - Atualmente',
       },
     ],
   },
   {
-    title: 'credentials',
+    title: 'Cursos',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
+        title: 'Ignite - Rocketseat',
+        stage: '2023',
       },
       {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
+        title: 'JavaScript Completo ES6 - Origamid',
+        stage: '2022',
       },
       {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'CSS com SASS - Origamid',
+        stage: '2022',
+      },
+      {
+        title: 'HTML e CSS para Iniciantes - Origamid',
+        stage: '2022',
+      },
+      {
+        title: 'Scrum Fundamentals Certified - SCRUMstudy',
+        stage: '2022',
       },
     ],
   },
@@ -114,7 +118,7 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[370px]"
+        className="hidden xl:flex absolute bottom-0 -left-[370px] z-10"
       >
         <Avatar />
       </motion.div>
@@ -143,7 +147,7 @@ const About = () => {
             collaborated on digital products for business and consumer use.
           </motion.p>
           {/* counters */}
-          <div
+          <motion.div
             variants={fadeIn('right', 0.6)}
             initial="hidden"
             animate="show"
@@ -158,7 +162,7 @@ const About = () => {
                   <CountUp start={0} end={10} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Years of experience
+                  Anos de experiencia
                 </div>
               </div>
               {/* Clients */}
@@ -192,10 +196,16 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
         {/* info */}
-        <div className=" flex flex-col w-full xl:max-w-[48%] h-[480px]">
+        <motion.div
+          variants={fadeIn('left', 0.4)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className=" flex flex-col w-full xl:max-w-[48%] h-[480px]"
+        >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => (
               <div
@@ -231,7 +241,7 @@ const About = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   )
