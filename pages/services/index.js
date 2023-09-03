@@ -65,8 +65,10 @@ const Services = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </p>
           </div>
-          {/* slider */}
-          <ServiceSlider />
+          <div className="w-full xl:max-w-[63%]">
+            {/* slider */}
+            <ServiceSlider />
+          </div>
         </div>
       </div>
       <Bulb />
