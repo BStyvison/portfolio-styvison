@@ -143,8 +143,7 @@ const About = () => {
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
             10 years ago, I began freelancing as a developer. Since then, i ve
-            done remote work for agencies, consulted for startups, and
-            collaborated on digital products for business and consumer use.
+            done remote work for agencies, consulted for startups
           </motion.p>
           {/* counters */}
           <motion.div
@@ -179,7 +178,7 @@ const About = () => {
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   +
-                  <CountUp start={0} end={21} duration={5} />
+                  <CountUp start={0} end={20} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Projetos finalizados
