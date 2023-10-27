@@ -17,19 +17,29 @@ export const Home = () => {
     <div className="bg-primary/60 h-full">
       {/* Text */}
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
+        <div className="text-center flex flex-col justify-center xl:pt-20 xl:text-left h-full container mx-auto">
+          {/* Title */}
+          <motion.h3
+            variants={fadeIn('down', 0.2)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="h3 text-lg"
+          >
+            Oi, Eu sou o Styvison
+          </motion.h3>
           {/* Title */}
           <motion.h1
             variants={fadeIn('down', 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1"
+            className="h1 mb-4"
           >
-            Arte e tecnologia <br /> unidas para uma{' '}
+            Programador
             <span className="text-accent">
               {' '}
-              <br /> experiência impactante{' '}
+              <br /> Front-End{' '}
             </span>
           </motion.h1>
           {/* Subtitle */}
@@ -38,10 +48,10 @@ export const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-8"
           >
-            Lorem ipsum dolor sit amet. Cum sint autem qui earum voluptuaries
-            sapiente dolor nam nihil temporibus et sint galisum!
+            Tenho 25 anos e sou desenvolvedor frontend há quase dois anos,
+            trabalhando como freelancer.
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">

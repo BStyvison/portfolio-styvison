@@ -31,7 +31,7 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[480px] mx-auto lg:max-0"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              Arte e tecnologia unidas para uma experiência impactante
             </motion.p>
           </div>
           {/* slider */}
