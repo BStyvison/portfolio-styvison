@@ -120,20 +120,19 @@ const About = () => {
         exit="hidden"
         className="hidden xl:flex absolute bottom-0 -left-[370px] z-10"
       >
-        <Avatar />
+        {/*<Avatar />*/}
       </motion.div>
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
-        <div className="flex-1 flex flex-col justify-center">
+        <div className="flex-1 flex flex-col justify-center xl:mt-8">
           <motion.h2
             variants={fadeIn('right', 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2"
+            className="h2 text-5xl"
           >
-            Captivating <span className="text-accent">stories</span> birth
-            magnificent designers.
+            <span className="text-accent">Arte e tecnologia </span>unidas para uma experiência impactante
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)}
@@ -142,8 +141,8 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, I began freelancing as a developer. Since then, i ve
-            done remote work for agencies, consulted for startups
+            Há quase 2 anos, comecei a trabalhar como desenvolvedor freelancer.
+            Desde então, tenho realizado trabalhos para agências e produtoras.
           </motion.p>
           {/* counters */}
           <motion.div
@@ -203,7 +202,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className=" flex flex-col w-full xl:max-w-[48%] h-[480px]"
+          className=" flex flex-col w-full xl:max-w-[48%] h-[480px] xl:mt-14"
         >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => (
