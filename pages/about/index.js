@@ -130,7 +130,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2 text-5xl"
+            className="h2 text-3xl sm:text-5xl"
           >
             <span className="text-accent">Arte e tecnologia </span>unidas para uma experiência impactante
           </motion.h2>
