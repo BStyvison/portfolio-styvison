@@ -22,15 +22,15 @@ const workSlides = {
       images: [
         {
           title: 'title',
-          path: '/thumb1.jpg',
+          path: '/banner_1.png',
         },
         {
           title: 'title',
-          path: '/thumb2.jpg',
+          path: '/banner_2.png',
         },
         {
           title: 'title',
-          path: '/thumb3.jpg',
+          path: '/banner_3.png',
         },
         {
           title: 'title',
