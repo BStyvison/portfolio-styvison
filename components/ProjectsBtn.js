@@ -15,7 +15,7 @@ export const ProjectsBtn = () => {
         className="relative w-[175px] h-[175px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group"
       >
         <Image
-          src={'/rounded-text.png'}
+          src={'/texto-arredondado.png'}
           width={141}
           height={148}
           alt=""

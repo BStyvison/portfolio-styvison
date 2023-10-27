@@ -15,14 +15,14 @@ const Socials = () => {
   return (
     <div className="flex items-center gap-x-5 text-lg">
       <Link
-        href={'https://github.com/BStyvison'}
+        href={'https://www.linkedin.com/in/styvison/'}
         target="_blank"
         className="hover:text-accent transition-all duration-300"
       >
         <RiLinkedinLine />
       </Link>
       <Link
-        href={'https://www.linkedin.com/in/styvison/'}
+        href={'https://github.com/BStyvison'}
         target="_blank"
         className="hover:text-accent transition-all duration-300"
       >
