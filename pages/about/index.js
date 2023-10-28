@@ -124,7 +124,7 @@ const About = () => {
             className="h2 text-3xl sm:text-5xl"
           >
             <span className="text-accent">Arte e tecnologia </span>unidas para
-            uma experiência impactante
+            uma experiência impactante!
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)}
