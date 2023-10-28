@@ -1,10 +1,10 @@
 // components
-import Avatar from '../../components/Avatar'
 import Circles from '../../components/Circles'
 
 // framer motion
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../variants'
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { icons } from 'react-icons'
 
 // counter

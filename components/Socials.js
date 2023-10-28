@@ -3,9 +3,7 @@ import Link from 'next/link'
 
 // icons
 import {
-  RiYoutubeLine,
   RiInstagramLine,
-  RiFacebookLine,
   RiWhatsappLine,
   RiLinkedinLine,
   RiGithubLine,
