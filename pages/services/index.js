@@ -52,20 +52,20 @@ export const serviceData = [
 
 const Services = () => {
   return (
-    <div className=" h-full bg-primary/38 py-36 flex items-center">
+    <div className=" h-full bg-primary/38 lg:pr-16 py-36 flex items-center ">
       <Circles />
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row gap-x-8">
+        <div className="flex flex-col lg:flex-row gap-x-8">
           {/* text */}
-          <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
+          <div className="text-center flex lg:w-[30vw] flex-col lg:text-left mb-4 lg:mb-0">
             <motion.h2
               variants={fadeIn('up', 0.2)}
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 xl:mt-8"
+              className="h2 lg:mt-8"
             >
-              My Services <span className="text-accent">.</span>
+              Meus Serviços <span className="text-accent">.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn('up', 0.4)}
@@ -74,7 +74,7 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[480px] mx-auto lg:max-0"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              Front-End de ponta a ponta, um serviço completo para você!
             </motion.p>
           </div>
           {/* slider */}
@@ -83,7 +83,7 @@ const Services = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="w-full xl:max-w-[63%]"
+            className="w-full lg:max-w-[63%]"
           >
             <ServiceSlider />
           </motion.div>
