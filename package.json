@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "eslint": "eslint src --ext .ts,.tsx",
+    "eslint2": "eslint src --ext .ts,.tsx --fix"
   },
   "dependencies": {
     "@next/font": "^13.4.4",

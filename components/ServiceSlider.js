@@ -17,34 +17,40 @@ import {
   RxReader,
   RxRocket,
   RxArrowTopRight,
+  RxUpdate,
 } from 'react-icons/rx'
 
 // data
 const serviceData = [
   {
-    icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <RxDesktop />,
+    title: 'Desenvolvimento',
+    description:
+      'Transformo ideias em código, criando sites e aplicativos impactantes.',
   },
   {
     icon: <RxPencil2 />,
     title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description:
+      'Experiências visuais únicas. Interfaces intuitivas que destacam sua marca.',
   },
   {
     icon: <RxReader />,
     title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description:
+      'Dê destaque ao seu projeto com palavras envolventes e persuasivas.',
   },
   {
     icon: <RxRocket />,
     title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description:
+      'Posicione sua marca. Aumente visibilidade online para atrair o público certo.',
+  },
+  {
+    icon: <RxUpdate />,
+    title: 'Manutenção',
+    description:
+      'Manter o site ou aplicação atualizado com as últimas tecnologias.',
   },
 ]
 

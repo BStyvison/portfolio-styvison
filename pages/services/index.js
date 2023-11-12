@@ -20,7 +20,7 @@ import { fadeIn } from '../../variants'
 export const serviceData = [
   {
     icon: <RxCrop />,
-    title: 'Brandin',
+    title: 'Brienfild',
     description:
       'Lorem ipsum is placeholder text commonly used in the graphic, print',
   },
@@ -40,7 +40,7 @@ export const serviceData = [
     icon: <RxReader />,
     title: 'Copywriting',
     description:
-      'Lorem ipsum is placeholder text commonly used in the graphic, print',
+      'Com copy personalizada, crio mensagens envolventes e persuasivas que contam a história do seu projeto de maneira única, destacando seus pontos fortes e atraindo seu público-alvo.',
   },
   {
     icon: <RxRocket />,

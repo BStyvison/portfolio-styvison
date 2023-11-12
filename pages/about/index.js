@@ -19,6 +19,7 @@ import {
   FaReact,
   FaWordpress,
   FaSass,
+  FaNodeJs,
 } from 'react-icons/fa'
 
 import {
@@ -27,6 +28,7 @@ import {
   SiGit,
   SiGithub,
   SiGulp,
+  SiTailwindcss,
 } from 'react-icons/si'
 
 //  data
@@ -38,9 +40,11 @@ export const aboutData = [
         title: 'Desenvolvimento Web',
         icons: [
           <SiNextdotjs key={5} />,
+          <FaNodeJs key={11} />,
           <SiTypescript key={8} />,
           <FaReact key={4} />,
           <FaJs key={3} />,
+          <SiTailwindcss key={12} />,
           <FaSass key={9} />,
           <FaCss3 key={2} />,
           <FaHtml5 key={1} />,
