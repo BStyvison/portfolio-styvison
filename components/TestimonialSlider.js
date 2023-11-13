@@ -27,7 +27,7 @@ const testimonialData = [
   {
     image: '/profile-marques.png',
     name: 'Marcio Santana',
-    position: 'empreendedor',
+    position: 'empresario',
     message:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
   },
