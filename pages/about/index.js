@@ -182,11 +182,10 @@ const About = () => {
               {/* Awards */}
               <div className="relative flex-1 ">
                 <div className="text-2xl lg:text-4xl font-extrabold text-accent mb-2">
-                  +
-                  <CountUp start={0} end={5} duration={5} />
+                  <CountUp start={0} end={100} duration={5} />%
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Projetos finalizados
+                  Clientes Sastifeitos
                 </div>
               </div>
             </div>
