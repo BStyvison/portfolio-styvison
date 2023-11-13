@@ -18,23 +18,23 @@ import Image from 'next/image'
 // testimonial data
 const testimonialData = [
   {
-    image: '/t-avt-1.png',
-    name: 'Anne Smith',
-    position: 'Customer',
+    image: '/profile-deodato.jpg',
+    name: 'Dr. Deodato Narciso',
+    position: 'Medico Ortopedista',
     message:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
   },
   {
-    image: '/t-avt-2.png',
-    name: 'Jane Doe',
-    position: 'Customer',
+    image: '/profile-marques.png',
+    name: 'Marcio Santana',
+    position: 'empreendedor',
     message:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
   },
   {
-    image: '/t-avt-3.png',
-    name: 'Jhon Doe',
-    position: 'Customer',
+    image: '/profile-tainan.png',
+    name: 'Tainan Breno',
+    position: 'CEO',
     message:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
   },
@@ -60,7 +60,13 @@ const TestimonialSlider = () => {
                 <div className="flex flex-col justify-center text-center">
                   {/* avatar */}
                   <div className="mb-2 mx-auto">
-                    <Image src={person.image} width={100} height={100} alt="" />
+                    <Image
+                      src={person.image}
+                      width={100}
+                      height={100}
+                      alt=""
+                      className="rounded-full"
+                    />
                   </div>
                   {/* name */}
                   <div className="text-lg">{person.name}</div>
