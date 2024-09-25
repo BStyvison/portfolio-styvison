@@ -1,15 +1,15 @@
 // components
-import Circles from "../../components/Circles";
+import Circles from '../../components/Circles';
 
 // framer motion
-import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../variants';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { icons } from "react-icons";
+import { icons } from 'react-icons';
 
 // counter
-import CountUp from "react-countup";
-import React, { useState } from "react";
+import CountUp from 'react-countup';
+import React, { useState } from 'react';
 
 // icons
 import {
@@ -23,7 +23,7 @@ import {
   FaLaravel,
   FaVuejs,
   FaPhp,
-} from "react-icons/fa";
+} from 'react-icons/fa';
 
 import {
   SiNextdotjs,
@@ -34,15 +34,15 @@ import {
   SiTailwindcss,
   SiVuetify,
   SiMysql,
-} from "react-icons/si";
+} from 'react-icons/si';
 
 //  data
 export const aboutData = [
   {
-    title: "Skills",
+    title: 'Skills',
     info: [
       {
-        title: "Frontend",
+        title: 'Frontend',
         icons: [
           <FaHtml5 key={1} title="HTML5" />,
           <FaCss3 key={2} title="CSS3" />,
@@ -56,7 +56,7 @@ export const aboutData = [
         ],
       },
       {
-        title: "Backend",
+        title: 'Backend',
         icons: [
           <FaNodeJs key={10} title="Node.js" />,
           <FaLaravel key={11} title="Laravel" />,
@@ -66,7 +66,7 @@ export const aboutData = [
         ],
       },
       {
-        title: "Ferramentas de Versionamento e Build",
+        title: 'Ferramentas de Versionamento e Build',
         icons: [
           <SiGit key={15} title="Git" />,
           <SiGithub key={16} title="GitHub" />,
@@ -74,59 +74,59 @@ export const aboutData = [
         ],
       },
       {
-        title: "Sistema para Gerenciamento de Conteúdo",
+        title: 'Sistema para Gerenciamento de Conteúdo',
         icons: [<FaWordpress key={18} title="WordPress" />],
       },
     ],
   },
   {
-    title: "Formação",
+    title: 'Formação',
     info: [
       {
-        title: "ADS - Universidade Católica de Brasília",
-        stage: "Cursando",
+        title: 'ADS - Universidade Católica de Brasília',
+        stage: 'Cursando',
       },
     ],
   },
   {
-    title: "Experiências",
+    title: 'Experiências',
     info: [
       {
-        title: "Desenvolvedor Web - XP Mídia",
-        stage: "Abril de 2022 - Março de 2023",
+        title: 'Desenvolvedor Web - XP Mídia',
+        stage: 'Abril de 2022 - Março de 2023',
       },
       {
-        title: "Desenvolvedor Web - Autônomo",
-        stage: "Março de 2023 - Atualmente",
+        title: 'Desenvolvedor Web - Autônomo',
+        stage: 'Março de 2023 - Atualmente',
       },
       {
-        title: "Desenvolvedor Web - Agência 87",
-        stage: "Junho de 2023 - Agosto de 2023",
+        title: 'Desenvolvedor Web - Agência 87',
+        stage: 'Junho de 2023 - Agosto de 2023',
       },
     ],
   },
   {
-    title: "Cursos",
+    title: 'Cursos',
     info: [
       {
-        title: "Ignite - Rocketseat",
-        stage: "2023",
+        title: 'Ignite - Rocketseat',
+        stage: '2023',
       },
       {
-        title: "JavaScript Completo ES6 - Origamid",
-        stage: "2022",
+        title: 'JavaScript Completo ES6 - Origamid',
+        stage: '2022',
       },
       {
-        title: "CSS com SASS - Origamid",
-        stage: "2022",
+        title: 'CSS com SASS - Origamid',
+        stage: '2022',
       },
       {
-        title: "HTML e CSS para Iniciantes - Origamid",
-        stage: "2022",
+        title: 'HTML e CSS para Iniciantes - Origamid',
+        stage: '2022',
       },
       {
-        title: "Scrum Fundamentals Certified - SCRUMstudy",
-        stage: "2022",
+        title: 'Scrum Fundamentals Certified - SCRUMstudy',
+        stage: '2022',
       },
     ],
   },
@@ -143,7 +143,7 @@ const About = () => {
         {/* text */}
         <div className="flex-1 flex flex-col justify-center lg:mt-8">
           <motion.h2
-            variants={fadeIn("right", 0.2)}
+            variants={fadeIn('right', 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -153,7 +153,7 @@ const About = () => {
             uma experiência impactante!
           </motion.h2>
           <motion.p
-            variants={fadeIn("right", 0.4)}
+            variants={fadeIn('right', 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -164,7 +164,7 @@ const About = () => {
           </motion.p>
           {/* counters */}
           <motion.div
-            variants={fadeIn("right", 0.6)}
+            variants={fadeIn('right', 0.6)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -215,7 +215,7 @@ const About = () => {
         </div>
         {/* info */}
         <motion.div
-          variants={fadeIn("left", 0.4)}
+          variants={fadeIn('left', 0.4)}
           initial="hidden"
           animate="show"
           exit="hidden"
@@ -227,7 +227,7 @@ const About = () => {
                 key={itemIndex}
                 className={`${
                   index === itemIndex &&
-                  "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
+                  'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
                 } cursor-pointer capitalize lg:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                 onClick={() => setIndex(itemIndex)}
               >

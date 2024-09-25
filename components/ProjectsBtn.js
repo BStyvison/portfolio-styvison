@@ -1,11 +1,11 @@
 // next image
-import Image from 'next/image'
+import Image from 'next/image';
 
 // next link
-import Link from 'next/link'
+import Link from 'next/link';
 
 // icons
-import { HiArrowRight } from 'react-icons/hi2'
+import { HiArrowRight } from 'react-icons/hi2';
 
 export const ProjectsBtn = () => {
   return (
@@ -24,5 +24,5 @@ export const ProjectsBtn = () => {
         <HiArrowRight className="absolute text-4xl group-hover:translate-x-2 transition-all duration-300" />
       </Link>
     </div>
-  )
-}
+  );
+};

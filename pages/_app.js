@@ -1,17 +1,17 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
 
 // components
-import { Layout } from '../components/Layout'
-import { Transition } from '../components/Transition'
+import { Layout } from '../components/Layout';
+import { Transition } from '../components/Transition';
 
 // router
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 
 // frame mation
-import { AnimatePresence, motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion';
 
 function MyApp({ Component, pageProps }) {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <Layout>
       <AnimatePresence mode="wait">
@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
         </motion.div>
       </AnimatePresence>
     </Layout>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;

@@ -1,20 +1,20 @@
 // import swiper react components
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // import swiper styles
-import 'swiper/css'
-import 'swiper/css/free-mode'
-import 'swiper/css/pagination'
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
 
 // import required modules
-import { Pagination } from 'swiper'
+import { Pagination } from 'swiper';
 
 // icons
-import { BsArrowRight } from 'react-icons/bs'
+import { BsArrowRight } from 'react-icons/bs';
 
 // next image
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from 'next/image';
+import Link from 'next/link';
 
 // data
 const workSlides = {
@@ -68,7 +68,7 @@ const workSlides = {
       ],
     },
   ],
-}
+};
 const WorkSlider = () => {
   return (
     <Swiper
@@ -121,11 +121,11 @@ const WorkSlider = () => {
               ))}
             </div>
           </SwiperSlide>
-        )
+        );
       })}
       Service Slide
     </Swiper>
-  )
-}
+  );
+};
 
-export default WorkSlider
+export default WorkSlider;

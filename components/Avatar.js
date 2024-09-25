@@ -1,5 +1,5 @@
 // next img
-import Image from 'next/image'
+import Image from 'next/image';
 
 const Avatar = () => {
   return (
@@ -12,7 +12,7 @@ const Avatar = () => {
         className="translate-z-0 w-full h-full"
       />
     </div>
-  )
-}
+  );
+};
 
-export default Avatar
+export default Avatar;

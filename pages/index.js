@@ -1,17 +1,17 @@
 // next image
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import Image from 'next/image'
+import Image from 'next/image';
 
 // components
-import ParticlesContainer from '../components/ParticlesContainer'
-import { ProjectsBtn } from '../components/ProjectsBtn'
-import Avatar from '../components/Avatar'
+import ParticlesContainer from '../components/ParticlesContainer';
+import { ProjectsBtn } from '../components/ProjectsBtn';
+import Avatar from '../components/Avatar';
 
 // frame motion
-import { easeInOut, motion } from 'framer-motion'
+import { easeInOut, motion } from 'framer-motion';
 
 // variants
-import { fadeIn } from '../variants'
+import { fadeIn } from '../variants';
 
 export const Home = () => {
   return (
@@ -88,7 +88,7 @@ export const Home = () => {
         </motion.div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

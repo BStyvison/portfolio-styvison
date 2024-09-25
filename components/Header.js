@@ -1,11 +1,11 @@
 // next image
-import Image from 'next/image'
+import Image from 'next/image';
 
 // next link
-import Link from 'next/link'
+import Link from 'next/link';
 
 // components
-import Socials from '../components/Socials'
+import Socials from '../components/Socials';
 
 const Header = () => {
   return (
@@ -27,7 +27,7 @@ const Header = () => {
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
