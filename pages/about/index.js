@@ -1,15 +1,15 @@
 // components
-import Circles from '../../components/Circles';
+import Circles from '../../components/Circles'
 
 // framer motion
-import { motion } from 'framer-motion';
-import { fadeIn } from '../../variants';
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../variants'
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { icons } from 'react-icons';
+import { icons } from 'react-icons'
 
 // counter
-import CountUp from 'react-countup';
-import React, { useState } from 'react';
+import CountUp from 'react-countup'
+import React, { useState } from 'react'
 
 // icons
 import {
@@ -23,7 +23,7 @@ import {
   FaLaravel,
   FaVuejs,
   FaPhp,
-} from 'react-icons/fa';
+} from 'react-icons/fa'
 
 import {
   SiNextdotjs,
@@ -34,7 +34,7 @@ import {
   SiTailwindcss,
   SiVuetify,
   SiMysql,
-} from 'react-icons/si';
+} from 'react-icons/si'
 
 //  data
 export const aboutData = [
@@ -130,10 +130,10 @@ export const aboutData = [
       },
     ],
   },
-];
+]
 
 const About = () => {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(0)
 
   return (
     <div className="h-full bg-primary/30 py-32 text-center lg:text-left">
@@ -269,7 +269,7 @@ const About = () => {
         </motion.div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About

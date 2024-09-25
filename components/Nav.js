@@ -1,8 +1,8 @@
 // next link
-import Link from 'next/link';
+import Link from 'next/link'
 
 // next router
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/router'
 
 // icons
 import {
@@ -12,7 +12,7 @@ import {
   HiRectangleGroup,
   HiChatBubbleBottomCenterText,
   // HiEnvelope,
-} from 'react-icons/hi2';
+} from 'react-icons/hi2'
 
 //  nav data
 export const navData = [
@@ -30,11 +30,11 @@ export const navData = [
     path: '/contact',
     icon: <HiEnvelope />,
   }, */
-];
+]
 
 const Nav = () => {
-  const router = useRouter();
-  const pathname = router.pathname;
+  const router = useRouter()
+  const pathname = router.pathname
   return (
     <nav className="flex flex-col items-center lg:justify-center gap-y-4 fixed h-max bottom-0 mt-auto lg:right-[2%] z-50 top-0 w-full lg:w-16 lg:max-w-md lg:h-screen">
       {/* inner */}
@@ -63,7 +63,7 @@ const Nav = () => {
         ))}
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Nav;
+export default Nav

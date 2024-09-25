@@ -5,16 +5,16 @@ import {
   RxDesktop,
   RxReader,
   RxRocket,
-} from 'react-icons/rx';
+} from 'react-icons/rx'
 
 // components
-import ServiceSlider from '../../components/ServiceSlider';
-import Bulb from '../../components/Bulb';
-import Circles from '../../components/Circles';
+import ServiceSlider from '../../components/ServiceSlider'
+import Bulb from '../../components/Bulb'
+import Circles from '../../components/Circles'
 
 // frame notion
-import { motion } from 'framer-motion';
-import { fadeIn } from '../../variants';
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../variants'
 
 // service data
 export const serviceData = [
@@ -48,7 +48,7 @@ export const serviceData = [
     description:
       'Lorem ipsum is placeholder text commonly used in the graphic, print',
   },
-];
+]
 
 const Services = () => {
   return (
@@ -91,7 +91,7 @@ const Services = () => {
       </div>
       <Bulb />
     </div>
-  );
-};
+  )
+}
 
-export default Services;
+export default Services

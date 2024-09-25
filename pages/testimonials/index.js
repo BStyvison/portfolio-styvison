@@ -1,9 +1,9 @@
 // components
-import TestimonialSlider from '../../components/TestimonialSlider';
+import TestimonialSlider from '../../components/TestimonialSlider'
 
 // motion
-import { motion } from 'framer-motion';
-import { fadeIn } from '../../variants';
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../variants'
 const Testimonials = () => {
   return (
     <div className="h-full bg-primary/30 text-center">
@@ -29,7 +29,7 @@ const Testimonials = () => {
         </motion.div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Testimonials;
+export default Testimonials

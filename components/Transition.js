@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
 const transitionVariants = {
   initial: {
@@ -13,7 +13,7 @@ const transitionVariants = {
     x: ['0%', '100%'],
     width: ['0%', '100%'],
   },
-};
+}
 
 export const Transition = () => {
   return (
@@ -43,5 +43,5 @@ export const Transition = () => {
         transition={{ delay: 0.6, duration: 0.6, ease: 'easeInOut' }}
       ></motion.div>
     </>
-  );
-};
+  )
+}

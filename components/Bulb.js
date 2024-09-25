@@ -1,5 +1,5 @@
 // next image
-import Image from 'next/image';
+import Image from 'next/image'
 
 const Bulb = () => {
   return (
@@ -12,7 +12,7 @@ const Bulb = () => {
         alt=""
       />
     </div>
-  );
-};
+  )
+}
 
-export default Bulb;
+export default Bulb

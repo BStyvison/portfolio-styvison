@@ -1,15 +1,15 @@
-import { Particles } from 'react-tsparticles';
-import { loadFull } from 'tsparticles';
-import React, { useCallback } from 'react';
+import { Particles } from 'react-tsparticles'
+import { loadFull } from 'tsparticles'
+import React, { useCallback } from 'react'
 
 const ParticlesContainer = () => {
   // init
   const particlesInit = useCallback(async (engine) => {
-    await loadFull(engine);
-  }, []);
+    await loadFull(engine)
+  }, [])
 
   // eslint-disable-next-line @typescript-eslint/no-empty-function
-  const particlesLoaded = useCallback(async () => {}, []);
+  const particlesLoaded = useCallback(async () => {}, [])
 
   return (
     <Particles
@@ -91,7 +91,7 @@ const ParticlesContainer = () => {
         detectRetina: true,
       }}
     />
-  );
-};
+  )
+}
 
-export default ParticlesContainer;
+export default ParticlesContainer

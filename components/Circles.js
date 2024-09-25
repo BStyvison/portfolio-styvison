@@ -1,5 +1,5 @@
 // Next image
-import Image from 'next/image';
+import Image from 'next/image'
 
 const Circles = () => {
   return (
@@ -12,7 +12,7 @@ const Circles = () => {
         alt=""
       />
     </div>
-  );
-};
+  )
+}
 
-export default Circles;
+export default Circles

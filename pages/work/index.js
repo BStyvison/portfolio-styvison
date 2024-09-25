@@ -1,11 +1,11 @@
 // components
-import WorkSlider from '../../components/WorkSlider';
-import Bulb from '../../components/Bulb';
-import Circles from '../../components/Circles';
+import WorkSlider from '../../components/WorkSlider'
+import Bulb from '../../components/Bulb'
+import Circles from '../../components/Circles'
 
 // frame notion
-import { motion } from 'framer-motion';
-import { fadeIn } from '../../variants';
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../variants'
 
 const Work = () => {
   return (
@@ -48,7 +48,7 @@ const Work = () => {
       </div>
       <Bulb />
     </div>
-  );
-};
+  )
+}
 
-export default Work;
+export default Work

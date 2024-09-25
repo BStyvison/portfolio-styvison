@@ -1,19 +1,19 @@
 // import swiper react components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 // import swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
 // import required modules
-import { Navigation, Pagination } from 'swiper';
+import { Navigation, Pagination } from 'swiper'
 
 // icons
-import { FaQuoteLeft } from 'react-icons/fa';
+import { FaQuoteLeft } from 'react-icons/fa'
 
 // next image
-import Image from 'next/image';
+import Image from 'next/image'
 
 // testimonial data
 const testimonialData = [
@@ -38,7 +38,7 @@ const testimonialData = [
     message:
       'A colaboração com Styvison foi fundamental para a renovação da nossa presença online. Sua atenção aos detalhes e capacidade de adaptar-se às mudanças foram impressionantes. O resultado final superou nossas expectativas, trazendo mais clientes para nosso negócio!',
   },
-];
+]
 
 const TestimonialSlider = () => {
   return (
@@ -89,11 +89,11 @@ const TestimonialSlider = () => {
               </div>
             </div>
           </SwiperSlide>
-        );
+        )
       })}
       Service Slide
     </Swiper>
-  );
-};
+  )
+}
 
-export default TestimonialSlider;
+export default TestimonialSlider

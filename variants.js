@@ -22,5 +22,5 @@ export const fadeIn = (direction, delay) => {
         ease: [0.25, 0.25, 0.25, 0.75],
       },
     },
-  };
-};
+  }
+}

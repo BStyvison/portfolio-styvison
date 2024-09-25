@@ -1,5 +1,5 @@
 // Links
-import Link from 'next/link';
+import Link from 'next/link'
 
 // icons
 import {
@@ -7,7 +7,7 @@ import {
   RiWhatsappLine,
   RiLinkedinLine,
   RiGithubLine,
-} from 'react-icons/ri';
+} from 'react-icons/ri'
 
 const Socials = () => {
   return (
@@ -43,7 +43,7 @@ const Socials = () => {
         <RiWhatsappLine />
       </Link>
     </div>
-  );
-};
+  )
+}
 
-export default Socials;
+export default Socials

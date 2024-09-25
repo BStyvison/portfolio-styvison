@@ -1,13 +1,13 @@
 // import swiper react components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 // import swiper styles
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/pagination';
+import 'swiper/css'
+import 'swiper/css/free-mode'
+import 'swiper/css/pagination'
 
 // import required modules
-import { FreeMode, Pagination } from 'swiper';
+import { FreeMode, Pagination } from 'swiper'
 
 // icons
 import {
@@ -17,7 +17,7 @@ import {
   RxRocket,
   RxArrowTopRight,
   RxUpdate,
-} from 'react-icons/rx';
+} from 'react-icons/rx'
 
 // data
 const serviceData = [
@@ -51,7 +51,7 @@ const serviceData = [
     description:
       'Manter o site ou aplicação atualizado com as últimas tecnologias.',
   },
-];
+]
 
 const ServiceSlider = () => {
   return (
@@ -94,11 +94,11 @@ const ServiceSlider = () => {
               </div>
             </div>
           </SwiperSlide>
-        );
+        )
       })}
       Service Slide
     </Swiper>
-  );
-};
+  )
+}
 
-export default ServiceSlider;
+export default ServiceSlider
