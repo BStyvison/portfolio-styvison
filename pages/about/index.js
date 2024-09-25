@@ -68,14 +68,14 @@ export const aboutData = [
       {
         title: 'Ferramentas de Versionamento e Build',
         icons: [
-          <SiGit key={14} title='Git' />,
-          <SiGithub key={15} title='GitHub' />,
-          <SiGulp key={16} title='Gulp' />,
+          <SiGit key={15} title='Git' />,
+          <SiGithub key={16} title='GitHub' />,
+          <SiGulp key={17} title='Gulp' />,
         ],
       },
       {
         title: 'Sistema para Gerenciamento de Conteúdo',
-        icons: [<FaWordpress key={17} title='WordPress' />],
+        icons: [<FaWordpress key={18} title='WordPress' />],
       },
     ],
   },
@@ -94,20 +94,14 @@ export const aboutData = [
       {
         title: 'Desenvolvedor Web - XP Mídia',
         stage: 'Abril de 2022 - Março de 2023',
-        // description:
-        //   'Responsável pelo desenvolvimento de sites e aplicações web utilizando tecnologias como React, Node.js e WordPress.',
       },
       {
         title: 'Desenvolvedor Web - Autônomo',
         stage: 'Março de 2023 - Atualmente',
-        // description:
-        //   'Desenvolvimento de projetos personalizados para clientes diversos, focando em soluções completas com frontend e backend.',
       },
       {
         title: 'Desenvolvedor Web - Agência 87',
         stage: 'Junho de 2023 - Agosto de 2023',
-        // description:
-        //   'Trabalho em equipe para o desenvolvimento de interfaces modernas e dinâmicas, integrando diversas APIs.',
       },
     ],
   },
@@ -142,78 +136,76 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-full bg-primary/30 py-32 text-center lg:text-left">
+    <div className='h-full bg-primary/30 py-32 text-center lg:text-left'>
       <Circles />
       {/* avatar img */}
-      <div className="container mx-auto h-full flex flex-col items-center lg:flex-row gap-x-6">
+      <div className='container mx-auto h-full flex flex-col items-center lg:flex-row gap-x-6'>
         {/* text */}
-        <div className="flex-1 flex flex-col justify-center lg:mt-8">
+        <div className='flex-1 flex flex-col justify-center lg:mt-8'>
           <motion.h2
-            variants={fadeIn("right", 0.2)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="h2 text-3xl sm:text-5xl"
+            variants={fadeIn('right', 0.2)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'
+            className='h2 text-3xl sm:text-5xl'
           >
-            <span className="text-accent">Arte e tecnologia </span>unidas para
-            uma experiência impactante!
+            <span className='text-accent'>Arte e tecnologia </span> unidas para uma experiência impactante!
           </motion.h2>
           <motion.p
-            variants={fadeIn("right", 0.4)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="max-w-[500px] mx-auto lg:mx-0 mb-6 lg:mb-12 px-2 lg:px-0"
+            variants={fadeIn('right', 0.4)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'
+            className='max-w-[500px] mx-auto lg:mx-0 mb-6 lg:mb-12 px-2 lg:px-0'
           >
-            Há quase 2 anos, comecei a trabalhar como desenvolvedor freelancer.
-            Desde então, tenho realizado trabalhos para agências e produtoras.
+            Há quase 2 anos, comecei a trabalhar como desenvolvedor freelancer. Desde então, tenho realizado trabalhos para agências e produtoras.
           </motion.p>
           {/* counters */}
           <motion.div
-            variants={fadeIn("right", 0.6)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="hidden md:flex md:max-w-xl lg:max-w-none mx-auto lg:mx-0 mb-8"
+            variants={fadeIn('right', 0.6)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'
+            className='hidden md:flex md:max-w-xl lg:max-w-none mx-auto lg:mx-0 mb-8'
           >
-            <div className="flex flex-1 lg:gap-x-6">
+            <div className='flex flex-1 lg:gap-x-6'>
               {/* experience */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl lg:text-4xl font-extrabold text-accent mb-2">
+              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
+                <div className='text-2xl lg:text-4xl font-extrabold text-accent mb-2'>
                   +
                   <CountUp start={0} end={1} duration={5} />
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Ano de experiencia
+                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
+                  Ano de experiência
                 </div>
               </div>
               {/* Clients */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl lg:text-4xl font-extrabold text-accent mb-2">
+              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
+                <div className='text-2xl lg:text-4xl font-extrabold text-accent mb-2'>
                   +
                   <CountUp start={0} end={5} duration={5} />
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Clientes Sastifeitos
+                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
+                  Clientes Satisfeitos
                 </div>
               </div>
               {/* Projects Finished */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl lg:text-4xl font-extrabold text-accent mb-2">
+              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
+                <div className='text-2xl lg:text-4xl font-extrabold text-accent mb-2'>
                   +
                   <CountUp start={0} end={20} duration={5} />
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
                   Projetos finalizados
                 </div>
               </div>
               {/* Awards */}
-              <div className="relative flex-1 ">
-                <div className="text-2xl lg:text-4xl font-extrabold text-accent mb-2">
+              <div className='relative flex-1'>
+                <div className='text-2xl lg:text-4xl font-extrabold text-accent mb-2'>
                   <CountUp start={0} end={100} duration={5} />%
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Clientes Sastifeitos
+                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
+                  Clientes Satisfeitos
                 </div>
               </div>
             </div>
@@ -221,19 +213,19 @@ const About = () => {
         </div>
         {/* info */}
         <motion.div
-          variants={fadeIn("left", 0.4)}
-          initial="hidden"
-          animate="show"
-          exit="hidden"
-          className=" flex flex-col w-full lg:max-w-[48%] h-[480px] lg:mt-14"
+          variants={fadeIn('left', 0.4)}
+          initial='hidden'
+          animate='show'
+          exit='hidden'
+          className='flex flex-col w-full lg:max-w-[48%] h-[480px] lg:mt-14'
         >
-          <div className="flex gap-x-4 lg:gap-x-8 mx-auto lg:mx-0 mb-4">
+          <div className='flex gap-x-4 lg:gap-x-8 mx-auto lg:mx-0 mb-4'>
             {aboutData.map((item, itemIndex) => (
               <div
                 key={itemIndex}
                 className={`${
                   index === itemIndex &&
-                  "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
+                  'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
                 } cursor-pointer capitalize lg:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                 onClick={() => setIndex(itemIndex)}
               >
@@ -241,27 +233,27 @@ const About = () => {
               </div>
             ))}
           </div>
-          <div className=" py-2 lg:py-6 lg:pr-14  flex flex-col gap-y-2 lg:gap-y-4 items-center lg:items-start">
+          <div className='py-2 lg:py-6 lg:pr-14 flex flex-col gap-y-2 lg:gap-y-4 items-center lg:items-start'>
             {aboutData[index].info.map((item, itemIndex) => (
               <div
                 key={itemIndex}
-                className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
+                className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'
               >
                 {/* title */}
-                <div className="font-bold text-lg text-accent">{item.title}</div>
-                <div className="hidden md:flex">-</div>
+                <div className='font-bold text-lg text-accent'>{item.title}</div>
+                <div className='hidden md:flex'>-</div>
                 {/* stage */}
                 <div>{item.stage}</div>
                 {/* description */}
                 {item.description && (
-                  <div className="text-sm mt-2">{item.description}</div>
+                  <div className='text-sm mt-2'>{item.description}</div>
                 )}
-                <div className="flex gap-x-4 flex-wrap">
+                <div className='flex gap-x-4 flex-wrap'>
                   {/* icons */}
-                  {item.icons?.map((icon, itemIndex) => (
+                  {item.icons?.map((icon, iconIndex) => (
                     <div
-                      key={itemIndex}
-                      className="text-2xl text-white lg:pb-4 "
+                      key={iconIndex}
+                      className='text-2xl text-white lg:pb-4'
                     >
                       {icon}
                     </div>
@@ -273,7 +265,7 @@ const About = () => {
         </motion.div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About
