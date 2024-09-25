@@ -22,19 +22,19 @@ const workSlides = {
     {
       images: [
         {
-          title: 'Construtora Castelus',
-          path: '/banner_1.png',
-          link: 'https://construtoracastelus.com.br/',
+          title: 'Clinica da Graca',
+          path: '/clinica-da-graca.png',
+          link: 'https://clinicadagraca.com.br/',
         },
         {
-          title: 'Gallery',
-          path: '/banner_2.png',
-          link: 'https://bstyvison.github.io/Gallery/',
+          title: 'Escola ENI',
+          path: '/escola-eni.png',
+          link: 'https://escolaeni.com.br/',
         },
         {
-          title: 'Pet Shopping',
-          path: '/banner_3.png',
-          link: 'https://bstyvison.github.io/Pet-Story/',
+          title: 'Antony',
+          path: '/antony.png',
+          link: 'https://antonyspaintremodeling.com/',
         },
         {
           title: 'Dr.Deodato',
@@ -46,20 +46,24 @@ const workSlides = {
     {
       images: [
         {
-          title: 'title',
-          path: '/thumb4.jpg',
+          title: 'Batista Filho',
+          path: '/batista-filho.png',
+          link: 'https://batistafilho.com/',
         },
         {
-          title: 'title',
-          path: '/thumb1.jpg',
+          title: 'Gallery',
+          path: '/banner_2.png',
+          link: 'https://bstyvison.github.io/Gallery/',
         },
         {
-          title: 'title',
-          path: '/thumb2.jpg',
+          title: 'IEG',
+          path: '/ieg.png',
+          link: 'https://ieg.org.br/',
         },
         {
-          title: 'title',
-          path: '/thumb3.jpg',
+          title: 'Construtora Castelus',
+          path: '/banner_1.png',
+          link: 'https://construtoracastelus.com.br/',
         },
       ],
     },
@@ -100,11 +104,11 @@ const WorkSlider = () => {
                       <div className="absolute bottom-0 translate-y-full group-hover:translate-y-10 group-hover:lg:-translate-y-20 transition-all duration-300">
                         <div className=" flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
                           {/* title part 1 */}
-                          <div className="delay-100">LIVE</div>
+                          <div className="delay-100">Veja o Projeto</div>
                           {/* title part 2 */}
-                          <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
+                          {/* <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
                             Project
-                          </div>
+                          </div> */}
                           {/* icon */}
                           <div className="text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200">
                             <BsArrowRight />

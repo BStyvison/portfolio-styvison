@@ -1,15 +1,15 @@
 // components
-import Circles from '../../components/Circles'
+import Circles from "../../components/Circles";
 
 // framer motion
-import { motion } from 'framer-motion'
-import { fadeIn } from '../../variants'
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { icons } from 'react-icons'
+import { icons } from "react-icons";
 
 // counter
-import CountUp from 'react-countup'
-import React, { useState } from 'react'
+import CountUp from "react-countup";
+import React, { useState } from "react";
 
 // icons
 import {
@@ -20,7 +20,10 @@ import {
   FaWordpress,
   FaSass,
   FaNodeJs,
-} from 'react-icons/fa'
+  FaLaravel,
+  FaVuejs,
+  FaPhp,
+} from "react-icons/fa";
 
 import {
   SiNextdotjs,
@@ -29,89 +32,114 @@ import {
   SiGithub,
   SiGulp,
   SiTailwindcss,
-} from 'react-icons/si'
+  SiVuetify,
+  SiMysql,
+} from "react-icons/si";
 
 //  data
 export const aboutData = [
   {
-    title: 'skills',
+    title: "Skills",
     info: [
       {
-        title: 'Desenvolvimento Web',
+        title: "Frontend",
         icons: [
-          <SiNextdotjs key={5} />,
-          <FaNodeJs key={11} />,
-          <SiTypescript key={8} />,
-          <FaReact key={4} />,
-          <FaJs key={3} />,
-          <SiTailwindcss key={12} />,
-          <FaSass key={9} />,
-          <FaCss3 key={2} />,
-          <FaHtml5 key={1} />,
-          <FaWordpress key={7} />,
+          <FaHtml5 key={1} title="HTML5" />,
+          <FaCss3 key={2} title="CSS3" />,
+          <FaJs key={3} title="JavaScript" />,
+          <FaReact key={4} title="React" />,
+          <FaVuejs key={5} title="Vue.js" />,
+          <SiNextdotjs key={6} title="Next.js" />,
+          <SiVuetify key={7} title="Vuetify" />,
+          <SiTailwindcss key={8} title="Tailwind CSS" />,
+          <FaSass key={9} title="Sass" />,
         ],
       },
       {
-        title: 'Outras tecnologias',
-        icons: [<SiGit key={4} />, <SiGithub key={5} />, <SiGulp key={6} />],
+        title: "Backend",
+        icons: [
+          <FaNodeJs key={10} title="Node.js" />,
+          <FaLaravel key={11} title="Laravel" />,
+          <SiMysql key={12} title="MySQL" />,
+          <SiTypescript key={13} title="TypeScript" />,
+          <FaPhp key={14} title="PHP" />,
+        ],
+      },
+      {
+        title: "Ferramentas de Versionamento e Build",
+        icons: [
+          <SiGit key={14} title="Git" />,
+          <SiGithub key={15} title="GitHub" />,
+          <SiGulp key={16} title="Gulp" />,
+        ],
+      },
+      {
+        title: "Sistema para Gerenciamento de Conteúdo",
+        icons: [<FaWordpress key={17} title="WordPress" />],
       },
     ],
   },
   {
-    title: 'Formação',
+    title: "Formação",
     info: [
       {
-        title: 'ADS - Universidade Católica de Brasília',
-        stage: 'Cursando',
+        title: "ADS - Universidade Católica de Brasília",
+        stage: "Cursando",
       },
     ],
   },
   {
-    title: 'experiencias',
+    title: "Experiências",
     info: [
       {
-        title: 'Progamador Web - XP Mídia',
-        stage: 'Abril de 2022 - Atualmente',
+        title: "Desenvolvedor Web - XP Mídia",
+        stage: "Abril de 2022 - Março de 2023",
+        // description:
+        //   "Responsável pelo desenvolvimento de sites e aplicações web utilizando tecnologias como React, Node.js e WordPress.",
       },
       {
-        title: 'Programador web - Autonomo',
-        stage: 'Março de 2023 - Atualmente',
+        title: "Desenvolvedor Web - Autônomo",
+        stage: "Março de 2023 - Atualmente",
+        // description:
+        //   "Desenvolvimento de projetos personalizados para clientes diversos, focando em soluções completas com frontend e backend.",
       },
       {
-        title: 'Progamador Web - Agencia 87',
-        stage: 'junho de 2023 - Atualmente',
+        title: "Desenvolvedor Web - Agência 87",
+        stage: "Junho de 2023 - Agosto de 2023",
+        // description:
+        //   "Trabalho em equipe para o desenvolvimento de interfaces modernas e dinâmicas, integrando diversas APIs.",
       },
     ],
   },
   {
-    title: 'Cursos',
+    title: "Cursos",
     info: [
       {
-        title: 'Ignite - Rocketseat',
-        stage: '2023',
+        title: "Ignite - Rocketseat",
+        stage: "2023",
       },
       {
-        title: 'JavaScript Completo ES6 - Origamid',
-        stage: '2022',
+        title: "JavaScript Completo ES6 - Origamid",
+        stage: "2022",
       },
       {
-        title: 'CSS com SASS - Origamid',
-        stage: '2022',
+        title: "CSS com SASS - Origamid",
+        stage: "2022",
       },
       {
-        title: 'HTML e CSS para Iniciantes - Origamid',
-        stage: '2022',
+        title: "HTML e CSS para Iniciantes - Origamid",
+        stage: "2022",
       },
       {
-        title: 'Scrum Fundamentals Certified - SCRUMstudy',
-        stage: '2022',
+        title: "Scrum Fundamentals Certified - SCRUMstudy",
+        stage: "2022",
       },
     ],
   },
-]
+];
 
 const About = () => {
-  const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(0);
 
   return (
     <div className="h-full bg-primary/30 py-32 text-center lg:text-left">
@@ -121,7 +149,7 @@ const About = () => {
         {/* text */}
         <div className="flex-1 flex flex-col justify-center lg:mt-8">
           <motion.h2
-            variants={fadeIn('right', 0.2)}
+            variants={fadeIn("right", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -131,7 +159,7 @@ const About = () => {
             uma experiência impactante!
           </motion.h2>
           <motion.p
-            variants={fadeIn('right', 0.4)}
+            variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -142,7 +170,7 @@ const About = () => {
           </motion.p>
           {/* counters */}
           <motion.div
-            variants={fadeIn('right', 0.6)}
+            variants={fadeIn("right", 0.6)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -193,7 +221,7 @@ const About = () => {
         </div>
         {/* info */}
         <motion.div
-          variants={fadeIn('left', 0.4)}
+          variants={fadeIn("left", 0.4)}
           initial="hidden"
           animate="show"
           exit="hidden"
@@ -205,7 +233,7 @@ const About = () => {
                 key={itemIndex}
                 className={`${
                   index === itemIndex &&
-                  'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
+                  "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
                 } cursor-pointer capitalize lg:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                 onClick={() => setIndex(itemIndex)}
               >
@@ -220,9 +248,14 @@ const About = () => {
                 className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
               >
                 {/* title */}
-                <div className="font-light mb-2 md:mb-0">{item.title}</div>
+                <div className="font-bold text-lg text-accent">{item.title}</div>
                 <div className="hidden md:flex">-</div>
+                {/* stage */}
                 <div>{item.stage}</div>
+                {/* description */}
+                {item.description && (
+                  <div className="text-sm mt-2">{item.description}</div>
+                )}
                 <div className="flex gap-x-4 flex-wrap">
                   {/* icons */}
                   {item.icons?.map((icon, itemIndex) => (
@@ -240,7 +273,7 @@ const About = () => {
         </motion.div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

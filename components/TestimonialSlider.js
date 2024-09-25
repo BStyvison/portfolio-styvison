@@ -22,21 +22,21 @@ const testimonialData = [
     name: 'Dr. Deodato Narciso',
     position: 'Medico Ortopedista',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Trabalhar com Styvison foi uma experiência transformadora. Ele demonstrou uma habilidade excepcional em entender as necessidades da minha prática médica e transformá-las em soluções digitais eficazes. Meu site nunca foi tão funcional e atraente!',
   },
   {
     image: '/profile-marques.png',
     name: 'Marcio Santana',
     position: 'empresario',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Fiquei extremamente satisfeito com o trabalho realizado por Styvison. Ele capturou perfeitamente a essência do meu negócio e entregou um site que não só parece incrível, mas também funciona de maneira impecável. Recomendo fortemente seus serviços a quem procura qualidade e profissionalismo!',
   },
   {
     image: '/profile-tainan.png',
     name: 'Tainan Breno',
     position: 'CEO',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'A colaboração com Styvison foi fundamental para a renovação da nossa presença online. Sua atenção aos detalhes e capacidade de adaptar-se às mudanças foram impressionantes. O resultado final superou nossas expectativas, trazendo mais clientes para nosso negócio!',
   },
 ]
 
