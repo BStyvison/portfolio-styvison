@@ -51,8 +51,7 @@ export const Home = () => {
             exit="hidden"
             className="max-w-sm lg:max-w-md mx-auto lg:mx-0 mb-10 lg:mb-8"
           >
-            Tenho 25 anos e sou desenvolvedor frontend há quase dois anos,
-            trabalhando como freelancer.
+            Tenho 26 anos e sou desenvolvedor frontend e experiencia em desenvolvimento de site e sistemas.
           </motion.p>
           {/* btn */}
           <div className="flex justify-center lg:hidden relative">

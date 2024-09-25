@@ -159,8 +159,8 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto lg:mx-0 mb-6 lg:mb-12 px-2 lg:px-0"
           >
-            Há quase 2 anos, comecei a trabalhar como desenvolvedor freelancer.
-            Desde então, tenho realizado trabalhos para agências e produtoras.
+            Há quase 3 anos, comecei a trabalhar como desenvolvedor freelancer.
+            Desde então, tenho realizado trabalhos para pessoas e empresas.
           </motion.p>
           {/* counters */}
           <motion.div
@@ -175,7 +175,7 @@ const About = () => {
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl lg:text-4xl font-extrabold text-accent mb-2">
                   +
-                  <CountUp start={0} end={1} duration={5} />
+                  <CountUp start={0} end={2} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Ano de experiência
@@ -185,7 +185,7 @@ const About = () => {
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl lg:text-4xl font-extrabold text-accent mb-2">
                   +
-                  <CountUp start={0} end={5} duration={5} />
+                  <CountUp start={0} end={10} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Clientes Satisfeitos
