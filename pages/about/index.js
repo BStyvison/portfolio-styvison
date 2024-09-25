@@ -1,15 +1,15 @@
 // components
-import Circles from "../../components/Circles";
+import Circles from '../../components/Circles'
 
 // framer motion
-import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../variants'
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { icons } from "react-icons";
+import { icons } from 'react-icons'
 
 // counter
-import CountUp from "react-countup";
-import React, { useState } from "react";
+import CountUp from 'react-countup'
+import React, { useState } from 'react'
 
 // icons
 import {
@@ -23,7 +23,7 @@ import {
   FaLaravel,
   FaVuejs,
   FaPhp,
-} from "react-icons/fa";
+} from 'react-icons/fa'
 
 import {
   SiNextdotjs,
@@ -34,105 +34,105 @@ import {
   SiTailwindcss,
   SiVuetify,
   SiMysql,
-} from "react-icons/si";
+} from 'react-icons/si'
 
 //  data
 export const aboutData = [
   {
-    title: "Skills",
+    title: 'Skills',
     info: [
       {
-        title: "Frontend",
+        title: 'Frontend',
         icons: [
-          <FaHtml5 key={1} title="HTML5" />,
-          <FaCss3 key={2} title="CSS3" />,
-          <FaJs key={3} title="JavaScript" />,
-          <FaReact key={4} title="React" />,
-          <FaVuejs key={5} title="Vue.js" />,
-          <SiNextdotjs key={6} title="Next.js" />,
-          <SiVuetify key={7} title="Vuetify" />,
-          <SiTailwindcss key={8} title="Tailwind CSS" />,
-          <FaSass key={9} title="Sass" />,
+          <FaHtml5 key={1} title='HTML5' />,
+          <FaCss3 key={2} title='CSS3' />,
+          <FaJs key={3} title='JavaScript' />,
+          <FaReact key={4} title='React' />,
+          <FaVuejs key={5} title='Vue.js' />,
+          <SiNextdotjs key={6} title='Next.js' />,
+          <SiVuetify key={7} title='Vuetify' />,
+          <SiTailwindcss key={8} title='Tailwind CSS' />,
+          <FaSass key={9} title='Sass' />,
         ],
       },
       {
-        title: "Backend",
+        title: 'Backend',
         icons: [
-          <FaNodeJs key={10} title="Node.js" />,
-          <FaLaravel key={11} title="Laravel" />,
-          <SiMysql key={12} title="MySQL" />,
-          <SiTypescript key={13} title="TypeScript" />,
-          <FaPhp key={14} title="PHP" />,
+          <FaNodeJs key={10} title='Node.js' />,
+          <FaLaravel key={11} title='Laravel' />,
+          <SiMysql key={12} title='MySQL' />,
+          <SiTypescript key={13} title='TypeScript' />,
+          <FaPhp key={14} title='PHP' />,
         ],
       },
       {
-        title: "Ferramentas de Versionamento e Build",
+        title: 'Ferramentas de Versionamento e Build',
         icons: [
-          <SiGit key={14} title="Git" />,
-          <SiGithub key={15} title="GitHub" />,
-          <SiGulp key={16} title="Gulp" />,
+          <SiGit key={14} title='Git' />,
+          <SiGithub key={15} title='GitHub' />,
+          <SiGulp key={16} title='Gulp' />,
         ],
       },
       {
-        title: "Sistema para Gerenciamento de Conteúdo",
-        icons: [<FaWordpress key={17} title="WordPress" />],
+        title: 'Sistema para Gerenciamento de Conteúdo',
+        icons: [<FaWordpress key={17} title='WordPress' />],
       },
     ],
   },
   {
-    title: "Formação",
+    title: 'Formação',
     info: [
       {
-        title: "ADS - Universidade Católica de Brasília",
-        stage: "Cursando",
+        title: 'ADS - Universidade Católica de Brasília',
+        stage: 'Cursando',
       },
     ],
   },
   {
-    title: "Experiências",
+    title: 'Experiências',
     info: [
       {
-        title: "Desenvolvedor Web - XP Mídia",
-        stage: "Abril de 2022 - Março de 2023",
+        title: 'Desenvolvedor Web - XP Mídia',
+        stage: 'Abril de 2022 - Março de 2023',
         // description:
-        //   "Responsável pelo desenvolvimento de sites e aplicações web utilizando tecnologias como React, Node.js e WordPress.",
+        //   'Responsável pelo desenvolvimento de sites e aplicações web utilizando tecnologias como React, Node.js e WordPress.',
       },
       {
-        title: "Desenvolvedor Web - Autônomo",
-        stage: "Março de 2023 - Atualmente",
+        title: 'Desenvolvedor Web - Autônomo',
+        stage: 'Março de 2023 - Atualmente',
         // description:
-        //   "Desenvolvimento de projetos personalizados para clientes diversos, focando em soluções completas com frontend e backend.",
+        //   'Desenvolvimento de projetos personalizados para clientes diversos, focando em soluções completas com frontend e backend.',
       },
       {
-        title: "Desenvolvedor Web - Agência 87",
-        stage: "Junho de 2023 - Agosto de 2023",
+        title: 'Desenvolvedor Web - Agência 87',
+        stage: 'Junho de 2023 - Agosto de 2023',
         // description:
-        //   "Trabalho em equipe para o desenvolvimento de interfaces modernas e dinâmicas, integrando diversas APIs.",
+        //   'Trabalho em equipe para o desenvolvimento de interfaces modernas e dinâmicas, integrando diversas APIs.',
       },
     ],
   },
   {
-    title: "Cursos",
+    title: 'Cursos',
     info: [
       {
-        title: "Ignite - Rocketseat",
-        stage: "2023",
+        title: 'Ignite - Rocketseat',
+        stage: '2023',
       },
       {
-        title: "JavaScript Completo ES6 - Origamid",
-        stage: "2022",
+        title: 'JavaScript Completo ES6 - Origamid',
+        stage: '2022',
       },
       {
-        title: "CSS com SASS - Origamid",
-        stage: "2022",
+        title: 'CSS com SASS - Origamid',
+        stage: '2022',
       },
       {
-        title: "HTML e CSS para Iniciantes - Origamid",
-        stage: "2022",
+        title: 'HTML e CSS para Iniciantes - Origamid',
+        stage: '2022',
       },
       {
-        title: "Scrum Fundamentals Certified - SCRUMstudy",
-        stage: "2022",
+        title: 'Scrum Fundamentals Certified - SCRUMstudy',
+        stage: '2022',
       },
     ],
   },
